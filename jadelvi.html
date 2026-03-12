@@ -1,0 +1,152 @@
+<html>
+<head>
+<title></title>
+<style>
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+.cuerpawer{
+padding:35px;
+}
+.contenedorchoncho{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:25px;
+}
+.cajaver{
+background:#563210;
+color:#FFFFFF;
+padding:15px;
+border-radius:10px;
+}
+.cajaver img{
+    width:100%;
+    height:100%;
+}
+.contenedor1{
+display:grid;
+grid-template-rows:repeat(4,fr);
+gap:20px;
+}
+.cajach{
+background:#567890;
+heigth:100px;
+color:#FFFFFF;
+padding:40px;
+border-radius:10px;
+}
+.cabezal{
+display:flex;
+justify-content: space-around;
+align-items:center;
+
+background:#874567;
+height:150px
+color:#FFFFFF;
+padding:50px;
+border-radius:10px;
+}
+.cabezal img{
+    width:100%;
+    height:100%;
+}
+.button{
+padding:10px 15px;
+border:1px solid #ff0064;
+border-radius:5px;
+background-color:#ff0096;
+color:#fff;
+text-decoration:none;
+text-transform:uppercase;
+text-align:center;
+box-shadow:1px 1px 1px #000;
+display:inline-block;
+
+}
+
+.button: hover{
+	cursor:pointer;
+}
+
+.button:active{
+	box-shadow:2px 2px 1px #000;
+}
+
+</style>
+
+</head>
+<body>
+<div class="cuerpawer">
+<div class="cabezal" style="background-image: url('salud.PNG')">
+<a href="diabetes.html" class="button-89">Diabetes</a>
+<a href="preci.html" class="button-89">Presion arterial</a>
+<a href="habit.html" class="button-89">Habitos Correctos</a>
+<a href="dietar.html" class="button-89">Dieta</a>
+<a href="alime.html" class="button-89">Alimentos sano</a>
+</div>
+<br>
+<div class="contenedorchoncho">
+<div class="contenedor1">
+<div class="cajach">
+<h2>¿Porque es importate cuidate?</h2>
+Te da más control y libertad en tu vida
+Cuando estás sano (física y mentalmente), tienes más energía, puedes hacer lo que te gusta, trabajar mejor, salir, viajar, disfrutar con tu familia o amigos… Sin salud, muchas cosas se complican o directamente se cancelan.
+</div>
+<div class="cajach">
+<h2>¿Qué es una dieta de verdad?</h2>
+Según fuentes como la OMS (Organización Mundial de la Salud) y expertos en nutrición, una dieta es simplemente:
+El conjunto de alimentos y bebidas (sólidos y líquidos) que una persona consume habitualmente todos los días.
+</div>
+<div class="cajach">
+<h2>Actividades fisicas saludables</h2>
+Según las recomendaciones de la OMS (Organización Mundial de la Salud) para adultos:
+<ul>
+<li>Al menos 150–300 minutos por semana de actividad aeróbica moderada (puedes hablar pero no cantar).</li>
+<li>O 75–150 minutos de actividad intensa.</li>
+<li>Además, ejercicios de fortalecimiento muscular al menos 2 días por semana.</li>
+<li>Y si puedes, incluye algo de equilibrio y flexibilidad.</li>
+<ul>
+</div>
+<div class="cajach">recuerda que primero esta tu salud despues lo otro, ya que sin salud no puedes hacer nada; cuidate y di no a la coca cola</div>
+</div>
+<div class="cajaver"><img src="salud.jpg"></div>
+</div>
+</div>
+
+    © 2026 Salud y Bienestar | Proyecto Escolar
+
+</body>
+</html>
