@@ -1,0 +1,24 @@
+h1{color:#5c3317;font-family:verdana;
+text-align: center;}
+
+
+h2{color:#5c3317;font-family:verdana;
+text-align: center;}
+p{color:#8c7853;font-family: Elephant;font-size: 12pt;
+text-align: center;}
+body{
+    background:#fffaf0;
+    color:#333;
+    line-height:1.6;
+}
+header{
+    background:#ff7f50;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}

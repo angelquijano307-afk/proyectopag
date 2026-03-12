@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salud y Bienestar</title>
+
+<style>
+
+body{
+    background:#eef2f7;
+}
+header{
+    background:linear-gradient(135deg,#1E88e5,#1565C0);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* NAV BOTONES PRO */
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:20px;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+nav a{
+    position:relative;
+    text-decoration:none;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(45deg,#43A047,#2E7D32);
+    transition:0.4s;
+    overflow:hidden;
+}
+
+/* Efecto brillo */
+
+nav a::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.3);
+    transform:skewX(-20deg);
+    transition:0.5s;
+}
+
+nav a:hover::before{
+    left:120%;
+}
+
+nav a:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* CONTENEDOR GRID */
+
+.contenedor{
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    gap:25px;
+    padding:40px;
+}
+
+/* CAJAS */
+
+.caja{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+    transition:0.4s;
+}
+
+.caja:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 25px rgba(0,0,0,0.15);
+}
+
+.caja h2{
+    color:#1E88E5;
+    margin-bottom:10px;
+}
+
+/* PUBLICIDAD */
+
+.publicidad{
+    background:linear-gradient(135deg,#ff9800,#ef6c00);
+    color:white;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    font-weight:bold;
+    height:fit-content;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+
+footer{
+    background:#1E88E5;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+    .contenedor{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        flex-wrap:wrap;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Salud y Bienestar</h1>
+    <p>Información confiable para tu vida diaria</p>
+</header>
+
+<nav>
+    <a href="#">Diabetes</a>
+    <a href="#">Presión Arterial</a>
+    <a href="#">Hábitos Correctos</a>
+    <a href="#">Alimentos Saludables</a>
+</nav>
+
+<div class="contenedor">
+
+    <div>
+        <div class="caja">
+            <h2>Diabetes</h2>
+            <p>Conoce cómo prevenir y controlar esta enfermedad mediante alimentación y ejercicio.</p>
+        </div>
+
+        <div class="caja">
+            <h2>Presión Arterial</h2>
+            <p>Mantener niveles adecuados reduce riesgos cardiovasculares.</p>
+        </div>
+
+        <div class="caja">
+            <h2>Hábitos Correctos</h2>
+            <p>Dormir bien, hidratarse y evitar el estrés mejora tu calidad de vida.</p>
+        </div>
+
+        <div class="caja">
+            <h2>Alimentos Saludables</h2>
+            <p>Incluye frutas, verduras y proteínas magras en tu dieta diaria.</p>
+        </div>
+    </div>
+
+    <div class="publicidad">
+        Espacio Publicitario
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Salud y Bienestar | Proyecto Escolar
+</footer>
+
+</body>
+</html>

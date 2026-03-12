@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Love For Pets</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+height:100vh;
+}
+
+.contenedor{
+width:100%;
+height:100vh;
+display:grid;
+grid-template-columns:1fr 2fr 1fr;
+grid-template-rows:120px 1fr 1fr;
+gap:20px;
+padding:20px;
+background:#f0f0f0;
+}
+
+.titulo{
+grid-column:1/4;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:35px;
+border:3px solid black;
+border-radius:40px;
+background:white;
+}
+
+.cuadro{
+border:3px solid black;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#cfe8ff;
+cursor:pointer;
+transition:0.3s;
+overflow:hidden;
+}
+
+.cuadro:hover{
+transform:scale(1.05);
+}
+
+.cuadro img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.grande{
+grid-column:2;
+grid-row:2/4;
+background:#ffd6d6;
+font-size:20px;
+flex-direction:column;
+padding:20px;
+text-align:center;
+
+/* ESTA PARTE PERMITE MOVER EL CONTENIDO */
+overflow-y:auto;
+
+}
+
+.grande img{
+width:60%;
+max-width:300px;
+margin:10px;
+border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<div class="titulo">My Love For Pets</div>
+
+<div class="cuadro" onclick="mostrar('perro')">
+<img src="perro.jpg">
+</div>
+
+<div class="cuadro grande" id="contenido">
+<h2>Selecciona una mascota</h2>
+<p>Aquí aparecerá la información.</p>
+</div>
+
+<div class="cuadro" onclick="mostrar('gato')">
+<img src="gato.jpg">
+</div>
+
+<div class="cuadro" onclick="mostrar('pez')">
+<img src="pez.jpg">
+</div>
+
+<div class="cuadro" onclick="mostrar('ave')">
+<img src="ave.jpg">
+</div>
+
+</div>
+
+<script>
+
+function mostrar(animal){
+
+let contenido = document.getElementById("contenido");
+
+if(animal === "perro"){
+contenido.innerHTML = `
+<h2>Perros</h2>
+<img src="perro.jpg">
+<p>Un perro (Canis lupus familiaris) es un mamífero carnívoro que pertenece a la familia de los cánidos. Es uno de los animales más comunes en el mundo y se le conoce tradicionalmente como "el mejor amigo del hombre" debido a su larga historia de convivencia y lealtad con los seres humanos.
+Aquí tienes los puntos clave para entender qué es y cómo funciona este animal:
+1. Origen y Domesticación
+El perro es una subespecie domesticada del lobo gris. Se estima que la domesticación comenzó hace entre 15,000 y 30,000 años, cuando los lobos menos agresivos se acercaron a los asentamientos humanos en busca de restos de comida, iniciando un proceso de evolución conjunta.
+2. Características Físicas
+Debido a la intervención humana (selección artificial), los perros presentan una diversidad morfológica mayor que cualquier otro animal silvestre:
+ * Sentidos: Su olfato es entre 10,000 y 100,000 veces más potente que el humano. También tienen un oído muy agudo, capaz de detectar frecuencias imperceptibles para nosotros.</p>
+`;
+}
+
+if(animal === "gato"){
+contenido.innerHTML = `
+<h2>Gatos</h2>
+<img src="gato.jpg">
+<p>Los gatos son animales independientes y muy curiosos.
+Son excelentes cazadores y les gusta dormir muchas horas al día.</p>
+`;
+}
+
+if(animal === "pez"){
+contenido.innerHTML = `
+<h2>Peces</h2>
+<img src="pez.jpg">
+<p>Los peces viven en el agua y son mascotas tranquilas.
+Existen peces de agua dulce y de agua salada.</p>
+`;
+}
+
+if(animal === "ave"){
+contenido.innerHTML = `
+<h2>Aves</h2>
+<img src="ave.jpg">
+<p>Las aves tienen plumas y muchas pueden volar.
+Algunas aves pueden aprender sonidos o palabras.</p>
+`;
+}
+
+}
+
+</script>
+
+</body>
+</html>
